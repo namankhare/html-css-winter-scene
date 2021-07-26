@@ -4,7 +4,7 @@ body{
     overflow: hidden;
 }
 /* fog */
-/* .fog {
+.fog {
   position: absolute;
   width: 30%;
   height: 80vh;
@@ -37,7 +37,7 @@ body{
     transform: translatex(0);
   }
 }
- */
+
 
 
 /* sky */
@@ -58,7 +58,7 @@ body{
   border-left: 450px solid transparent;
   border-right: 450px solid transparent;
   border-bottom: 380px solid #7ac1e4;
-  z-index: 2;
+  z-index: -1;
 }
 .mountain{
   left: 20%;
@@ -600,7 +600,7 @@ body{
     flex: 0 1 100%;
     transform: rotate(-15deg);
     margin:0 40px -43px 0;
-    z-index: 10000;
+    z-index: 1000;
 }
 .hat .pony {
     width: 35px;
@@ -652,17 +652,21 @@ body{
     animation-timing-function: ease;
     animation-duration:13s;
     animation-iteration-count: infinite;
-    z-index: 1000;
+    /* z-index: 2 !important; */
+
   }
   
+
+  
   .head {
+    /* position: relative; */
     align-self: center;
     width: 120px;
     height: 120px;
     border: 1px solid #DDFFFF;
     border-radius: 50%;
     background: white;
-    z-index: 1000;
+
     box-shadow: inset 20px 4px 10px rgba(163, 163, 163, 0.3);
   }
   
@@ -921,7 +925,7 @@ body{
   border-top-left-radius: 220px;
   border-top-right-radius: 220px;
   border-bottom: 0;
-  z-index: 100;
+  z-index: 0;
   box-shadow: inset 10px 4px 10px rgba(139, 139, 139, 0.3);
 }
 
@@ -1061,7 +1065,7 @@ animation: smoke 3s 2.5s infinite;
   height: 100%;
   width: 10%;
   display: block;
-  z-index: 2;
+  z-index: 0;
   left: 70%;
   top: 20%;
   animation: trunk 3s  infinite;
@@ -1176,7 +1180,7 @@ border-color: transparent transparent rgb(152, 202, 90) transparent;
   height: 100%;
   width: 10%;
   display: block;
-  z-index: 3;
+  z-index: 0;
   left: 70%;
   top: 60%;
   transform: skew(-2deg, 02deg);
@@ -1278,7 +1282,7 @@ border-color: transparent transparent rgb(152, 202, 90) transparent;
 
 .smallGift {
   position: absolute;
-  z-index: 2;
+  z-index: 0;
   left: 72%;
   top: 65%;
   position: absolute;
@@ -1326,7 +1330,7 @@ border-color: transparent transparent rgb(152, 202, 90) transparent;
       /* Gift 3 small */
       .smallGift1 {
         position: absolute;
-        z-index: 2;
+        z-index: 0;
         left: 79.5%;
         top: 65%;
         position: absolute;
@@ -1458,7 +1462,7 @@ border-color: transparent transparent rgb(152, 202, 90) transparent;
   position: absolute;
   left: 30%;
   top: 50%;
-  z-index: 100;
+  z-index: 0;
   /* transform: rotateZ(-10deg); */
 }
 
